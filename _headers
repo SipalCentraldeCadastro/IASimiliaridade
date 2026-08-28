@@ -1,0 +1,38 @@
+# Cloudflare Pages — cabecalhos do site
+# Objetivo: o usuario final sempre pega a versao nova no F5, e as imagens
+# (com ?v=versao no fim) podem ficar em cache longo sem risco de defasagem.
+
+/
+  Cache-Control: no-store
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=()
+
+/index.html
+  Cache-Control: no-store
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=()
+
+# Indice das Boas Praticas — fonte de verdade da galeria
+/manifest.json
+  Cache-Control: no-store
+  Content-Type: application/json; charset=utf-8
+
+# Base geral e bases por fluxo (301/302/303/304) + metadados
+/sipal-base.json
+  Cache-Control: no-store
+  Content-Type: application/json; charset=utf-8
+
+/sipal-base-*.json
+  Cache-Control: no-store
+  Content-Type: application/json; charset=utf-8
+
+# Imagens publicadas: versionadas por ?v= no proprio site
+/dados/boas_praticas/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/dados/*
+  Cache-Control: public, max-age=300
