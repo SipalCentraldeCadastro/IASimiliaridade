@@ -1,8 +1,44 @@
 {
-  "versao": "2026-08-28-e3b0c4",
-  "gerado_em": "2026-08-28T20:19:14Z",
+  "versao": "2026-08-28-698800",
+  "gerado_em": "2026-08-28T20:25:35Z",
   "pasta": "dados/boas_praticas",
-  "total": 0,
-  "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-  "boas_praticas": []
+  "total": 5,
+  "hash": "6988003798f21e37281a0097ec375cd38852a56d1e42b12a7b6a001df98d577e",
+  "boas_praticas": [
+    {
+      "ordem": 1,
+      "arquivo": "dados/boas_praticas/01-custo-do-material.webp",
+      "titulo": "Custo do Material",
+      "desc": "",
+      "bytes": 244062
+    },
+    {
+      "ordem": 2,
+      "arquivo": "dados/boas_praticas/02-prevencao-de-duplicidade.webp",
+      "titulo": "Prevencao de Duplicidade",
+      "desc": "",
+      "bytes": 268978
+    },
+    {
+      "ordem": 3,
+      "arquivo": "dados/boas_praticas/03-umb.webp",
+      "titulo": "Umb",
+      "desc": "",
+      "bytes": 272746
+    },
+    {
+      "ordem": 4,
+      "arquivo": "dados/boas_praticas/04-momenro-correto-do-cadastro.webp",
+      "titulo": "Momenro Correto do Cadastro",
+      "desc": "",
+      "bytes": 243130
+    },
+    {
+      "ordem": 5,
+      "arquivo": "dados/boas_praticas/05-cadastro-de-material.webp",
+      "titulo": "Cadastro de Material",
+      "desc": "",
+      "bytes": 224822
+    }
+  ]
 }
