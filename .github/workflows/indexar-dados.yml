@@ -1,0 +1,45 @@
+name: Indexar dados (manifest.json)
+
+# Gera/atualiza o manifest.json das Boas Praticas sempre que uma imagem
+# entra, sai ou muda em dados/boas_praticas/. O index.html le esse arquivo
+# (fetch no-store) e todos os usuarios recebem a atualizacao no proximo F5.
+# Nenhum servico externo envolvido: repositorio -> manifest.json -> site.
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'dados/boas_praticas/**'
+      - '.github/scripts/gerar-manifest.py'
+      - '.github/workflows/indexar-dados.yml'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: indexar-dados
+  cancel-in-progress: true
+
+jobs:
+  manifest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Gerar manifest.json
+        run: python3 .github/scripts/gerar-manifest.py
+
+      - name: Commitar se houve mudanca
+        run: |
+          if git diff --quiet -- manifest.json; then
+            echo "manifest.json sem alteracoes"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add manifest.json
+          git commit -m "chore(dados): atualiza manifest.json das Boas Praticas [skip ci]"
+          git push
