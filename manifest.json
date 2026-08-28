@@ -1,9 +1,9 @@
 {
-  "versao": "2026-08-28-698800",
-  "gerado_em": "2026-08-28T20:25:35Z",
+  "versao": "2026-08-28-2cab5c",
+  "gerado_em": "2026-08-28T20:28:01Z",
   "pasta": "dados/boas_praticas",
-  "total": 5,
-  "hash": "6988003798f21e37281a0097ec375cd38852a56d1e42b12a7b6a001df98d577e",
+  "total": 4,
+  "hash": "2cab5c79b0ce761787ac01ff4ad3ec30fe4d721f39350aafe71080c6e4f6a921",
   "boas_praticas": [
     {
       "ordem": 1,
@@ -32,13 +32,6 @@
       "titulo": "Momenro Correto do Cadastro",
       "desc": "",
       "bytes": 243130
-    },
-    {
-      "ordem": 5,
-      "arquivo": "dados/boas_praticas/05-cadastro-de-material.webp",
-      "titulo": "Cadastro de Material",
-      "desc": "",
-      "bytes": 224822
     }
   ]
 }
