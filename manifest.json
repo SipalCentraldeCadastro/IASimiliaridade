@@ -1,9 +1,9 @@
 {
-  "versao": "2026-08-28-698800",
-  "gerado_em": "2026-08-28T20:28:40Z",
+  "versao": "2026-10-23-c87778",
+  "gerado_em": "2026-10-23T16:06:08Z",
   "pasta": "dados/boas_praticas",
   "total": 5,
-  "hash": "6988003798f21e37281a0097ec375cd38852a56d1e42b12a7b6a001df98d577e",
+  "hash": "c877783607f5ad08d1cd04f6af464180c23692ecd92ed121e1e20f40a58a0477",
   "boas_praticas": [
     {
       "ordem": 1,
@@ -28,8 +28,8 @@
     },
     {
       "ordem": 4,
-      "arquivo": "dados/boas_praticas/04-momenro-correto-do-cadastro.webp",
-      "titulo": "Momenro Correto do Cadastro",
+      "arquivo": "dados/boas_praticas/04-Momento-correto-do-Cadastro.webp",
+      "titulo": "Momento Correto do Cadastro",
       "desc": "",
       "bytes": 243130
     },
